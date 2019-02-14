@@ -1,0 +1,6 @@
+module Pods_Shorthair {
+  umbrella header "Pods-Shorthair-umbrella.h"
+
+  export *
+  module * { export * }
+}

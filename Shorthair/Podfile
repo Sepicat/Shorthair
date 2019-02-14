@@ -1,0 +1,17 @@
+platform :ios, '10.0'
+
+# Muti Project
+# install! 'cocoapods', generate_multiple_pod_projects: true
+
+
+
+target 'Shorthair' do
+  pod 'SnapKit', '~> 4.2.0'
+  pod 'YYText', '~> 1.0.4'
+end
+
+target 'Shorthair-Sample' do
+  pod 'SnapKit', '~> 4.2.0'
+  pod 'YYText', '~> 1.0.4'
+end
+
