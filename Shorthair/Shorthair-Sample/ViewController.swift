@@ -44,6 +44,8 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ShorLeftBubbleCell", for: indexPath)
             as? ShorLeftBubbleCell {
+            cell.selectionStyle = .none
+            cell.updateLayouts()
             return cell
         }
         return UITableViewCell()

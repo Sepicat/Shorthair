@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/Sepicat/Shorthair.git", :tag => "0.1.0" }
   s.source_files  =  "Shorthair/Shorthair/**/*.{swift}"
   s.ios.deployment_target = '10.0'
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.dependency 'SnapKit', '~> 4.2.0'
   s.dependency 'YYText', '~> 1.0.4'
 end

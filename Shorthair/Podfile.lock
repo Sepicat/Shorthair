@@ -1,16 +1,29 @@
 PODS:
+  - Shorthair (0.1.0):
+    - SnapKit (~> 4.2.0)
+    - YYText (~> 1.0.4)
   - SnapKit (4.2.0)
+  - YYText (1.0.7)
 
 DEPENDENCIES:
+  - Shorthair (from `../`)
   - SnapKit (~> 4.2.0)
+  - YYText (~> 1.0.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - SnapKit
+    - YYText
+
+EXTERNAL SOURCES:
+  Shorthair:
+    :path: "../"
 
 SPEC CHECKSUMS:
+  Shorthair: 558963a72b66095deab1fb991ed972ddc7a036f9
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: 5620216182639e228daa75b7052b51b96df4a16a
+PODFILE CHECKSUM: 778db859a817bd08e335cc34488d41a4915b7ee1
 
 COCOAPODS: 1.6.0

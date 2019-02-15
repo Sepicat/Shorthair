@@ -35,6 +35,11 @@ public class ShorLeftBubbleCell: UITableViewCell {
         return label
     }()
     
+    lazy private var bubbleTextView: ShorBubbleTextView = {
+        var textView = ShorBubbleTextView(frame: .zero)
+        return textView
+    }()
+    
     lazy private var bubbleView: UIView = {
         var view = UIView()
         view.backgroundColor = UIColor.white
@@ -54,6 +59,7 @@ public class ShorLeftBubbleCell: UITableViewCell {
         bakView.addSubview(avatarImageView)
         bakView.addSubview(loginLabel)
         bakView.addSubview(bubbleView)
+        bubbleView.addSubview(bubbleTextView)
     }
     
     private func initialLayouts() {
@@ -78,9 +84,24 @@ public class ShorLeftBubbleCell: UITableViewCell {
             make.left.equalTo(loginLabel)
             make.top.equalTo(loginLabel.snp.bottom).offset(6)
             make.right.equalToSuperview().offset(-20)
-            
-            let height = Float.random(in: 40..<200)
-            make.height.greaterThanOrEqualTo(height)
+            make.height.greaterThanOrEqualTo(40)
+            make.bottom.lessThanOrEqualToSuperview().offset(-20)
+        }
+        
+        bubbleTextView.snp.makeConstraints { make in
+            make.left.equalToSuperview().offset(10)
+            make.top.equalToSuperview().offset(10)
+            make.right.equalToSuperview().offset(-10)
+            make.bottom.equalToSuperview().offset(-10)
+        }
+    }
+    
+    public func updateLayouts() {
+        bubbleView.snp.updateConstraints { make in
+            make.left.equalTo(loginLabel)
+            make.top.equalTo(loginLabel.snp.bottom).offset(6)
+            make.right.equalToSuperview().offset(-20)
+            make.height.greaterThanOrEqualTo(40)
             make.bottom.lessThanOrEqualToSuperview().offset(-20)
         }
     }

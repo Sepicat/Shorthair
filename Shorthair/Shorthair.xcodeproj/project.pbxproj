@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33BFF017FDBB14D3D00271CD /* libPods-Shorthair-Sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8787E9C1461450BED4AD5E59 /* libPods-Shorthair-Sample.a */; };
+		22F255183EABCF105B603C8A /* Pods_Shorthair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2B8D35862E634A3A0E3C6E /* Pods_Shorthair.framework */; };
+		84ED556022165AF9009F16D9 /* ShorBubbleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED555F22165AF9009F16D9 /* ShorBubbleTextView.swift */; };
 		84F7F0B22215C80500DAFE17 /* Shorthair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7F0A82215C80500DAFE17 /* Shorthair.framework */; };
 		84F7F0B72215C80500DAFE17 /* ShorthairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F0B62215C80500DAFE17 /* ShorthairTests.swift */; };
 		84F7F0B92215C80500DAFE17 /* Shorthair.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F7F0AB2215C80500DAFE17 /* Shorthair.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -20,7 +21,7 @@
 		84F7F0DF2215CFFC00DAFE17 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */; };
 		84F7F0E02215CFFC00DAFE17 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */; };
 		84F7F0E12215D5C900DAFE17 /* Shorthair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7F0A82215C80500DAFE17 /* Shorthair.framework */; };
-		F7B49FC3393AC90F0F5E0880 /* libPods-Shorthair.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36A70F542C8A026D2E316F87 /* libPods-Shorthair.a */; };
+		86ECA3407750F22F4A007347 /* Pods_Shorthair_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF4392CB41A9F6C9B49F879 /* Pods_Shorthair_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		36A70F542C8A026D2E316F87 /* libPods-Shorthair.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shorthair.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C2B8D35862E634A3A0E3C6E /* Pods_Shorthair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shorthair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CF4392CB41A9F6C9B49F879 /* Pods_Shorthair_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shorthair_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6741F2A60BCFEE7E9643FE82 /* Pods-Shorthair-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shorthair-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		84ED555F22165AF9009F16D9 /* ShorBubbleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorBubbleTextView.swift; sourceTree = "<group>"; };
 		84F7F0A82215C80500DAFE17 /* Shorthair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shorthair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F7F0AB2215C80500DAFE17 /* Shorthair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shorthair.h; sourceTree = "<group>"; };
 		84F7F0AC2215C80500DAFE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,7 +54,6 @@
 		84F7F0D42215C82800DAFE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F7F0DA2215CE3900DAFE17 /* ShorLeftBubbleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorLeftBubbleCell.swift; sourceTree = "<group>"; };
 		84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
-		8787E9C1461450BED4AD5E59 /* libPods-Shorthair-Sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Shorthair-Sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB777706B58C29B5A69B6FAB /* Pods-Shorthair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shorthair.debug.xcconfig"; path = "Target Support Files/Pods-Shorthair/Pods-Shorthair.debug.xcconfig"; sourceTree = "<group>"; };
 		DA97BE4857FCA12DB50F425D /* Pods-Shorthair-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shorthair-Sample.release.xcconfig"; path = "Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		DF3B7B5C68CC9383623CFDEF /* Pods-Shorthair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shorthair.release.xcconfig"; path = "Target Support Files/Pods-Shorthair/Pods-Shorthair.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B49FC3393AC90F0F5E0880 /* libPods-Shorthair.a in Frameworks */,
+				22F255183EABCF105B603C8A /* Pods_Shorthair.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,13 +81,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				84F7F0E12215D5C900DAFE17 /* Shorthair.framework in Frameworks */,
-				33BFF017FDBB14D3D00271CD /* libPods-Shorthair-Sample.a in Frameworks */,
+				86ECA3407750F22F4A007347 /* Pods_Shorthair_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84ED555E22165AC9009F16D9 /* ElementView */ = {
+			isa = PBXGroup;
+			children = (
+				84ED555F22165AF9009F16D9 /* ShorBubbleTextView.swift */,
+			);
+			path = ElementView;
+			sourceTree = "<group>";
+		};
 		84F7F09E2215C80500DAFE17 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +162,7 @@
 		84F7F0D92215C9BA00DAFE17 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84ED555E22165AC9009F16D9 /* ElementView */,
 				84F7F0DC2215CE3C00DAFE17 /* ElementCell */,
 			);
 			path = View;
@@ -187,8 +198,8 @@
 		ED8DDFA769BD27C54E1AAD61 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				36A70F542C8A026D2E316F87 /* libPods-Shorthair.a */,
-				8787E9C1461450BED4AD5E59 /* libPods-Shorthair-Sample.a */,
+				1C2B8D35862E634A3A0E3C6E /* Pods_Shorthair.framework */,
+				4CF4392CB41A9F6C9B49F879 /* Pods_Shorthair_Sample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -252,6 +263,7 @@
 				84F7F0C22215C82700DAFE17 /* Sources */,
 				84F7F0C32215C82700DAFE17 /* Frameworks */,
 				84F7F0C42215C82700DAFE17 /* Resources */,
+				D044D940AE3836E8203465A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -378,6 +390,32 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D044D940AE3836E8203465A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYText/YYText.framework",
+				"${BUILT_PRODUCTS_DIR}/Shorthair/Shorthair.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Shorthair.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -385,6 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ED556022165AF9009F16D9 /* ShorBubbleTextView.swift in Sources */,
 				84F7F0DB2215CE3900DAFE17 /* ShorLeftBubbleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
