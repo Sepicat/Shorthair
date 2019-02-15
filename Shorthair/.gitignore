@@ -5,6 +5,7 @@
 ## Build generated
 build/
 DerivedData/
+Shorthair.xcworkspace/xcuserdata/gua.xcuserdatad/UserInterfaceState.xcuserstate
 
 ## Various settings
 *.pbxuser
