@@ -13,7 +13,7 @@ public class ShorBubbleTextView: UIView {
     
     lazy private var textLabel: YYLabel = {
         let label = YYLabel()
-        label.text = "Before you start, are you using the latest CocoaPods release? Yes, 1.5.3\r\n [X ] I've read and understood the [*CONTRIBUTING* guidelines and have done my best effort to follow](https://github.com/CocoaPods/CocoaPods/blob/master/CONTRIBUTING.md).\r\n\r\n# Report\r\n\r\n## What did you do?\r\nEdit ~/.cocapods/config.yaml and added:"
+        label.text = "Before you start, are you using the latest CocoaPods release? Yes, 1.5.3\r\n [X ] I've read and understood the [*CONTRIBUTING* guidelines and have done my best effort to follow](https://github.com/CocoaPods/CocoaPods/blob/master/CONTRIBUTING.md).\n\n# Report\n\n## What did you do?\nEdit ~/.cocapods/config.yaml and added:"
         label.numberOfLines = 10
         label.font = UIFont.systemFont(ofSize: 13)
         return label

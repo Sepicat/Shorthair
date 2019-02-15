@@ -1,7 +1,7 @@
 platform :ios, '10.0'
 # Muti Project
 # install! 'cocoapods', generate_multiple_pod_projects: true
-
+install! 'cocoapods', :disable_input_output_paths => true
 
 
 target 'Shorthair' do

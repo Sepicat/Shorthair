@@ -28,7 +28,7 @@ public class ShorLeftBubbleCell: UITableViewCell {
     
     lazy private var loginLabel: UILabel = {
         var label = UILabel()
-        label.text = "Desgard"
+        label.text = "Sepicat"
         label.textColor = UIColor.lightGray
         label.font = UIFont.systemFont(ofSize: 10)
         label.numberOfLines = 1
