@@ -14,4 +14,5 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES' }
   s.dependency 'SnapKit', '~> 4.2.0'
   s.dependency 'YYText', '~> 1.0.4'
+  s.dependency 'YYAsyncLayer', '~> 1.0'
 end

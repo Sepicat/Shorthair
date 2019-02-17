@@ -21,11 +21,19 @@
 		84F7F0DF2215CFFC00DAFE17 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */; };
 		84F7F0E02215CFFC00DAFE17 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */; };
 		84F7F0E12215D5C900DAFE17 /* Shorthair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7F0A82215C80500DAFE17 /* Shorthair.framework */; };
+		84F7F0E62217EE1E00DAFE17 /* ShorMarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F0E52217EE1E00DAFE17 /* ShorMarkdownParser.swift */; };
 		86ECA3407750F22F4A007347 /* Pods_Shorthair_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF4392CB41A9F6C9B49F879 /* Pods_Shorthair_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		84F7F0B32215C80500DAFE17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F7F09F2215C80500DAFE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F7F0A72215C80500DAFE17;
+			remoteInfo = Shorthair;
+		};
+		84F7F0E22217119E00DAFE17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84F7F09F2215C80500DAFE17 /* Project object */;
 			proxyType = 1;
@@ -54,6 +62,7 @@
 		84F7F0D42215C82800DAFE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F7F0DA2215CE3900DAFE17 /* ShorLeftBubbleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorLeftBubbleCell.swift; sourceTree = "<group>"; };
 		84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-icon.png"; sourceTree = "<group>"; };
+		84F7F0E52217EE1E00DAFE17 /* ShorMarkdownParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorMarkdownParser.swift; sourceTree = "<group>"; };
 		AB777706B58C29B5A69B6FAB /* Pods-Shorthair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shorthair.debug.xcconfig"; path = "Target Support Files/Pods-Shorthair/Pods-Shorthair.debug.xcconfig"; sourceTree = "<group>"; };
 		DA97BE4857FCA12DB50F425D /* Pods-Shorthair-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shorthair-Sample.release.xcconfig"; path = "Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample.release.xcconfig"; sourceTree = "<group>"; };
 		DF3B7B5C68CC9383623CFDEF /* Pods-Shorthair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shorthair.release.xcconfig"; path = "Target Support Files/Pods-Shorthair/Pods-Shorthair.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,6 +163,7 @@
 		84F7F0D82215C99E00DAFE17 /* Issue */ = {
 			isa = PBXGroup;
 			children = (
+				84F7F0E42217ECC000DAFE17 /* Parser */,
 				84F7F0D92215C9BA00DAFE17 /* View */,
 			);
 			path = Issue;
@@ -182,6 +192,14 @@
 				84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */,
 			);
 			path = assets;
+			sourceTree = "<group>";
+		};
+		84F7F0E42217ECC000DAFE17 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F0E52217EE1E00DAFE17 /* ShorMarkdownParser.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 		D0C58D78DB19564173805EB1 /* Pods */ = {
@@ -268,6 +286,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				84F7F0E32217119E00DAFE17 /* PBXTargetDependency */,
 			);
 			name = "Shorthair-Sample";
 			productName = "Shorthair-Sample";
@@ -417,6 +436,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84ED556022165AF9009F16D9 /* ShorBubbleTextView.swift in Sources */,
+				84F7F0E62217EE1E00DAFE17 /* ShorMarkdownParser.swift in Sources */,
 				84F7F0DB2215CE3900DAFE17 /* ShorLeftBubbleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +465,11 @@
 			isa = PBXTargetDependency;
 			target = 84F7F0A72215C80500DAFE17 /* Shorthair */;
 			targetProxy = 84F7F0B32215C80500DAFE17 /* PBXContainerItemProxy */;
+		};
+		84F7F0E32217119E00DAFE17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F7F0A72215C80500DAFE17 /* Shorthair */;
+			targetProxy = 84F7F0E22217119E00DAFE17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

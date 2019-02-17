@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         tableView.separatorStyle = .none
         tableView.estimatedRowHeight = 60.0
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.alpha = 0
         tableView.register(ShorLeftBubbleCell.self, forCellReuseIdentifier: "ShorLeftBubbleCell")
         return tableView
     }()
@@ -29,6 +30,11 @@ class ViewController: UIViewController {
     
     private func initialViews() {
         view.addSubview(tableView)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+            self.tableView.reloadData()
+            self.tableView.alpha = 1
+        }
     }
     
     private func initialLayouts() {
@@ -37,6 +43,7 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDataSource {
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
     }
@@ -45,7 +52,7 @@ extension ViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "ShorLeftBubbleCell", for: indexPath)
             as? ShorLeftBubbleCell {
             cell.selectionStyle = .none
-            cell.updateLayouts()
+            cell.updateViews()
             return cell
         }
         return UITableViewCell()
