@@ -98,7 +98,7 @@ public class ShorLeftBubbleCell: UITableViewCell {
             make.left.equalTo(loginLabel)
             make.top.equalTo(loginLabel.snp.bottom).offset(6)
             make.right.equalToSuperview().offset(-20)
-            make.bottom.lessThanOrEqualToSuperview().offset(-20)
+            make.bottom.equalToSuperview().offset(-20)
         }
         
         bubbleTextView.snp.makeConstraints { make in
@@ -117,8 +117,11 @@ public class ShorLeftBubbleCell: UITableViewCell {
         let parser = ShorMarkdownParser()
         bubbleTextView.attributedText = attributedText
         bubbleTextView.textParser = parser
-        heightConstraint?.update(offset: 65.0 + height)
-        cellHeight = 65.0 + height
+        
+        // 更新 cell height
+        // TODO: https://github.com/ibireme/YYText/issues/174
+        cellHeight = 85.0 + height
+        heightConstraint?.update(offset: cellHeight)
     }
 
     override public func setSelected(_ selected: Bool, animated: Bool) {

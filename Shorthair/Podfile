@@ -14,5 +14,8 @@ end
 target 'Shorthair-Sample' do
   use_frameworks!
   pod 'Shorthair', :path => "../"
+#  pod 'SnapKit', '~> 4.2.0'
+#  pod 'YYText', '~> 1.0.4'
+#  pod 'YYAsyncLayer', '~> 1.0'
 end
 

@@ -24,7 +24,7 @@ public class ShorMarkdownParser: NSObject {
     }
     
     public struct Regex {
-        var regexHeader: NSRegularExpression = regexp("^(((\\#{1,6})([^#].*))|((\\#{6})(.+)))$")
+        var regexHeader: NSRegularExpression = regexp("^(?:(\\#{1,6})([^#].*))|(?:(\\#{6})(.+))$")
         var regexLink: NSRegularExpression = regexp("!?\\[([^\\[\\]]+)\\](\\(([^\\(\\)]+)\\)|\\[([^\\[\\]]+)\\])")
     }
     
@@ -72,27 +72,42 @@ extension ShorMarkdownParser: YYTextParser {
             return false
         }
         let str = text.string
-        text.yy_removeDiscontinuousAttributes(in: NSRange(location: 0, length: text.length))
+        // 移位增量
+        var delta: Int = 0
         regex.regexHeader.enumerateMatches(in: str, range: NSRange(location: 0, length: str.count)) { result, flags, stop in
-            guard let r = result?.range else {
+            guard let result = result else {
                 return
             }
-            let startIntex = str.index(str.startIndex, offsetBy: r.location - 1)
-            let endIntex = str.index(str.startIndex, offsetBy: r.location + r.length)
-            let subStr = String(str[startIntex ..< endIntex])
-            let (sharpLen, whiteLen) = checkSymbol("#", str: subStr)
-            print(sharpLen, whiteLen)
-            text.yy_setColor(.red, range: NSRange(location: r.location + sharpLen, length: r.length - sharpLen))
-//            let range = Range(r)
-//            let whiteLen = self.lengthOfBeginWhite(in: str, range: r)
-//            var sharpLen = self.lengthOfBegin(char: unichar("#") ?? unichar(bitPattern: 0), in: str, range: NSRange(location: r.location + whiteLen, length: r.length - whiteLen))
-//            if sharpLen > 6 {
-//                sharpLen = 6
-//            }
-//            let (sharpLen, whiteLen) = checkSymbol("#", str: )
-//
-//            text.yy_setColor(.gray, range: NSRange(location: r.location, length: ))
-//            text.yy_setColor(.red, range: NSRange(location: r.location + whiteLen + sharpLen, length: r.length - whiteLen - sharpLen))
+            let r = result.range
+            let sharpResult: NSRange = result.range(at: 1)
+            let descResult: NSRange = result.range(at: 2)
+            let sharpLen = sharpResult.length
+            let desc: NSMutableAttributedString = NSMutableAttributedString(string: (str as NSString).substring(with: descResult))
+            desc.yy_setColor(.red, range: NSRange(location: 0, length: desc.length))
+            
+            let realR = NSRange(location: r.location - delta, length: r.length)
+            text.replaceCharacters(in: realR, with: desc)
+
+            let newDescR = NSRange(location: sharpResult.location - delta, length: descResult.length)
+//            text.yy_removeDiscontinuousAttributes(in: newDescR)
+//            text.yy_setColor(.red, range: newDescR)
+//            text.yy_setFont(UIFont.systemFont(ofSize: 17), range: newDescR)
+//            text.addAttributes([
+//                NSAttributedString.Key.backgroundColor: UIColor.yellow,
+//                NSAttributedString.Key.underlineColor: UIColor.gray,
+//            ], range: newDescR)
+
+            delta += sharpResult.length
+            
+//            text.replaceCharacters(in: realR, with: desc)
+//            delta += sharpResult.length
+//            text.addAttributes([
+//                NSAttributedString.Key.strokeColor : UIColor.red,
+//                NSAttributedString.Key.backgroundColor : UIColor.yellow,
+//            ], range: realR)
+//            text.yy_setColor(.red, range: realDescResult)
+            
+            
         }
         
         return true

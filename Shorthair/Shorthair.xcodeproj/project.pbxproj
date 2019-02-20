@@ -20,20 +20,12 @@
 		84F7F0DB2215CE3900DAFE17 /* ShorLeftBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F0DA2215CE3900DAFE17 /* ShorLeftBubbleCell.swift */; };
 		84F7F0DF2215CFFC00DAFE17 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */; };
 		84F7F0E02215CFFC00DAFE17 /* logo-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0DE2215CFFC00DAFE17 /* logo-icon.png */; };
-		84F7F0E12215D5C900DAFE17 /* Shorthair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7F0A82215C80500DAFE17 /* Shorthair.framework */; };
 		84F7F0E62217EE1E00DAFE17 /* ShorMarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F0E52217EE1E00DAFE17 /* ShorMarkdownParser.swift */; };
 		86ECA3407750F22F4A007347 /* Pods_Shorthair_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF4392CB41A9F6C9B49F879 /* Pods_Shorthair_Sample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		84F7F0B32215C80500DAFE17 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 84F7F09F2215C80500DAFE17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 84F7F0A72215C80500DAFE17;
-			remoteInfo = Shorthair;
-		};
-		84F7F0E22217119E00DAFE17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84F7F09F2215C80500DAFE17 /* Project object */;
 			proxyType = 1;
@@ -89,7 +81,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F7F0E12215D5C900DAFE17 /* Shorthair.framework in Frameworks */,
 				86ECA3407750F22F4A007347 /* Pods_Shorthair_Sample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,12 +272,11 @@
 				84F7F0C22215C82700DAFE17 /* Sources */,
 				84F7F0C32215C82700DAFE17 /* Frameworks */,
 				84F7F0C42215C82700DAFE17 /* Resources */,
-				D044D940AE3836E8203465A5 /* [CP] Embed Pods Frameworks */,
+				57818011482E6544791D66E0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				84F7F0E32217119E00DAFE17 /* PBXTargetDependency */,
 			);
 			name = "Shorthair-Sample";
 			productName = "Shorthair-Sample";
@@ -387,6 +377,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		57818011482E6544791D66E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9F570B631BE87C172BE2C553 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -407,25 +416,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D044D940AE3836E8203465A5 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -465,11 +455,6 @@
 			isa = PBXTargetDependency;
 			target = 84F7F0A72215C80500DAFE17 /* Shorthair */;
 			targetProxy = 84F7F0B32215C80500DAFE17 /* PBXContainerItemProxy */;
-		};
-		84F7F0E32217119E00DAFE17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 84F7F0A72215C80500DAFE17 /* Shorthair */;
-			targetProxy = 84F7F0E22217119E00DAFE17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -629,6 +614,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Shorthair/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -657,6 +643,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Shorthair/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,6 +703,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;
 				INFOPLIST_FILE = "Shorthair-Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -735,6 +723,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;
 				INFOPLIST_FILE = "Shorthair-Sample/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
