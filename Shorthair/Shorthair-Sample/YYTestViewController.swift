@@ -9,7 +9,7 @@
 import UIKit
 import Shorthair
 
-class ViewController: UIViewController {
+class YYTestViewController: UIViewController {
     
     lazy private var tableView: UITableView = {
         var tableView = UITableView(frame: view.bounds, style: .plain)
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension YYTestViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 20
@@ -63,5 +63,5 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-extension ViewController: UITableViewDelegate {}
+extension YYTestViewController: UITableViewDelegate {}
 

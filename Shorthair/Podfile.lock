@@ -1,34 +1,58 @@
 PODS:
-  - Shorthair (0.1.0):
-    - SnapKit (~> 4.2.0)
-    - YYAsyncLayer (~> 1.0)
-    - YYText (~> 1.0.4)
+  - Atributika (4.6.9)
+  - DTCoreText (1.6.21):
+    - DTCoreText/Core (= 1.6.21)
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTCoreText/Core (1.6.21):
+    - DTFoundation/Core (~> 1.7.5)
+    - DTFoundation/DTAnimatedGIF (~> 1.7.5)
+    - DTFoundation/DTHTMLParser (~> 1.7.5)
+    - DTFoundation/UIKit (~> 1.7.5)
+  - DTFoundation/Core (1.7.13)
+  - DTFoundation/DTAnimatedGIF (1.7.13)
+  - DTFoundation/DTHTMLParser (1.7.13):
+    - DTFoundation/Core
+  - DTFoundation/UIKit (1.7.13):
+    - DTFoundation/Core
+  - MMMarkdown (0.5.5)
   - SnapKit (4.2.0)
+  - TTTAttributedLabel (2.0.0)
   - YYAsyncLayer (1.0)
   - YYText (1.0.7)
 
 DEPENDENCIES:
-  - Shorthair (from `../`)
+  - Atributika
+  - DTCoreText
+  - MMMarkdown
   - SnapKit (~> 4.2.0)
+  - TTTAttributedLabel (~> 2.0)
   - YYAsyncLayer (~> 1.0)
   - YYText (~> 1.0.4)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Atributika
+    - DTCoreText
+    - DTFoundation
+    - MMMarkdown
     - SnapKit
+    - TTTAttributedLabel
     - YYAsyncLayer
     - YYText
 
-EXTERNAL SOURCES:
-  Shorthair:
-    :path: "../"
-
 SPEC CHECKSUMS:
-  Shorthair: a93eafc0e4f4b154927cbc1f478e5afd01bd330f
+  Atributika: 06480d85c28097ca73241d8bd0b96d7787f5fe06
+  DTCoreText: e5d688cffc9f6a61eddd1a4f94e2046851230de3
+  DTFoundation: f03be9fd786f11e505bb8fc44e2a3732bf0917df
+  MMMarkdown: 1af97166ce0f6d6e0cb05695665492195d27c3f1
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   YYAsyncLayer: df6b01ebc695c5f6b4c15dd5c23fa3e081eb25c0
   YYText: 5c461d709e24d55a182d1441c41dc639a18a4849
 
-PODFILE CHECKSUM: f814f4b02f425dc907573ba231e429b41413ea1d
+PODFILE CHECKSUM: 90728b864d47421726a45e01880212413826317a
 
 COCOAPODS: 1.6.0

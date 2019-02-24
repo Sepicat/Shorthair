@@ -7,7 +7,7 @@
 		<key>Shorthair-Sample.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>7</integer>
+			<integer>9</integer>
 		</dict>
 		<key>Shorthair.xcscheme_^#shared#^_</key>
 		<dict>
@@ -23,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>84F7F0B02215C80500DAFE17</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>84F7F0C52215C82700DAFE17</key>
 		<dict>
 			<key>primary</key>
 			<true/>

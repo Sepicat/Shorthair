@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		22F255183EABCF105B603C8A /* Pods_Shorthair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2B8D35862E634A3A0E3C6E /* Pods_Shorthair.framework */; };
-		84ED556022165AF9009F16D9 /* ShorBubbleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ED555F22165AF9009F16D9 /* ShorBubbleTextView.swift */; };
+		84E223DD22205AAD008F0404 /* TTAttrViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E223DC22205AAD008F0404 /* TTAttrViewController.swift */; };
+		84E223E02220D98A008F0404 /* Shorthair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7F0A82215C80500DAFE17 /* Shorthair.framework */; };
+		84E223E12220D98A008F0404 /* Shorthair.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7F0A82215C80500DAFE17 /* Shorthair.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84E223EA2220DB2F008F0404 /* TTMarkdownParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E223E92220DB2F008F0404 /* TTMarkdownParser.swift */; };
+		84E223EF2220EF9B008F0404 /* TTMarkdownLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E223EE2220EF9B008F0404 /* TTMarkdownLabel.swift */; };
+		84E223F32222AA88008F0404 /* TTShorLeftBubbleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E223F22222AA88008F0404 /* TTShorLeftBubbleCell.swift */; };
+		84E223F62222AAD4008F0404 /* TTShorLeftBubbleCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E223F52222AAD4008F0404 /* TTShorLeftBubbleCellModel.swift */; };
 		84F7F0B22215C80500DAFE17 /* Shorthair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7F0A82215C80500DAFE17 /* Shorthair.framework */; };
 		84F7F0B72215C80500DAFE17 /* ShorthairTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F0B62215C80500DAFE17 /* ShorthairTests.swift */; };
 		84F7F0B92215C80500DAFE17 /* Shorthair.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F7F0AB2215C80500DAFE17 /* Shorthair.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84F7F0C92215C82700DAFE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F0C82215C82700DAFE17 /* AppDelegate.swift */; };
-		84F7F0CB2215C82700DAFE17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F0CA2215C82700DAFE17 /* ViewController.swift */; };
+		84F7F0CB2215C82700DAFE17 /* YYTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F7F0CA2215C82700DAFE17 /* YYTestViewController.swift */; };
 		84F7F0CE2215C82700DAFE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0CC2215C82700DAFE17 /* Main.storyboard */; };
 		84F7F0D02215C82800DAFE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0CF2215C82800DAFE17 /* Assets.xcassets */; };
 		84F7F0D32215C82800DAFE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F7F0D12215C82800DAFE17 /* LaunchScreen.storyboard */; };
@@ -25,6 +31,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		84E223E22220D98A008F0404 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F7F09F2215C80500DAFE17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F7F0A72215C80500DAFE17;
+			remoteInfo = Shorthair;
+		};
 		84F7F0B32215C80500DAFE17 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84F7F09F2215C80500DAFE17 /* Project object */;
@@ -34,11 +47,29 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		84E223E42220D98A008F0404 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84E223E12220D98A008F0404 /* Shorthair.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		1C2B8D35862E634A3A0E3C6E /* Pods_Shorthair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shorthair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CF4392CB41A9F6C9B49F879 /* Pods_Shorthair_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shorthair_Sample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6741F2A60BCFEE7E9643FE82 /* Pods-Shorthair-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shorthair-Sample.debug.xcconfig"; path = "Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample.debug.xcconfig"; sourceTree = "<group>"; };
-		84ED555F22165AF9009F16D9 /* ShorBubbleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorBubbleTextView.swift; sourceTree = "<group>"; };
+		84E223DC22205AAD008F0404 /* TTAttrViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTAttrViewController.swift; sourceTree = "<group>"; };
+		84E223E92220DB2F008F0404 /* TTMarkdownParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTMarkdownParser.swift; sourceTree = "<group>"; };
+		84E223EE2220EF9B008F0404 /* TTMarkdownLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTMarkdownLabel.swift; sourceTree = "<group>"; };
+		84E223F22222AA88008F0404 /* TTShorLeftBubbleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTShorLeftBubbleCell.swift; sourceTree = "<group>"; };
+		84E223F52222AAD4008F0404 /* TTShorLeftBubbleCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTShorLeftBubbleCellModel.swift; sourceTree = "<group>"; };
 		84F7F0A82215C80500DAFE17 /* Shorthair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shorthair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F7F0AB2215C80500DAFE17 /* Shorthair.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shorthair.h; sourceTree = "<group>"; };
 		84F7F0AC2215C80500DAFE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,7 +78,7 @@
 		84F7F0B82215C80500DAFE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84F7F0C62215C82700DAFE17 /* Shorthair-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shorthair-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F7F0C82215C82700DAFE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84F7F0CA2215C82700DAFE17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84F7F0CA2215C82700DAFE17 /* YYTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYTestViewController.swift; sourceTree = "<group>"; };
 		84F7F0CD2215C82700DAFE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84F7F0CF2215C82800DAFE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84F7F0D22215C82800DAFE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -82,18 +113,63 @@
 			buildActionMask = 2147483647;
 			files = (
 				86ECA3407750F22F4A007347 /* Pods_Shorthair_Sample.framework in Frameworks */,
+				84E223E02220D98A008F0404 /* Shorthair.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		84ED555E22165AC9009F16D9 /* ElementView */ = {
+		84E223E52220DA2B008F0404 /* YYText */ = {
 			isa = PBXGroup;
 			children = (
-				84ED555F22165AF9009F16D9 /* ShorBubbleTextView.swift */,
+				84E223E62220DA3B008F0404 /* View */,
+				84F7F0E42217ECC000DAFE17 /* Parser */,
 			);
-			path = ElementView;
+			path = YYText;
+			sourceTree = "<group>";
+		};
+		84E223E62220DA3B008F0404 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84F7F0DA2215CE3900DAFE17 /* ShorLeftBubbleCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84E223E72220DA51008F0404 /* TTTAttr */ = {
+			isa = PBXGroup;
+			children = (
+				84E223ED2220EF7C008F0404 /* Component */,
+				84E223E82220DABE008F0404 /* Parser */,
+				84E223F42222AAAE008F0404 /* ViewModel */,
+				84F7F0D92215C9BA00DAFE17 /* View */,
+			);
+			path = TTTAttr;
+			sourceTree = "<group>";
+		};
+		84E223E82220DABE008F0404 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				84E223E92220DB2F008F0404 /* TTMarkdownParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		84E223ED2220EF7C008F0404 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				84E223EE2220EF9B008F0404 /* TTMarkdownLabel.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		84E223F42222AAAE008F0404 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84E223F52222AAD4008F0404 /* TTShorLeftBubbleCellModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		84F7F09E2215C80500DAFE17 = {
@@ -142,7 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				84F7F0C82215C82700DAFE17 /* AppDelegate.swift */,
-				84F7F0CA2215C82700DAFE17 /* ViewController.swift */,
+				84F7F0CA2215C82700DAFE17 /* YYTestViewController.swift */,
+				84E223DC22205AAD008F0404 /* TTAttrViewController.swift */,
 				84F7F0CC2215C82700DAFE17 /* Main.storyboard */,
 				84F7F0CF2215C82800DAFE17 /* Assets.xcassets */,
 				84F7F0D12215C82800DAFE17 /* LaunchScreen.storyboard */,
@@ -154,8 +231,8 @@
 		84F7F0D82215C99E00DAFE17 /* Issue */ = {
 			isa = PBXGroup;
 			children = (
-				84F7F0E42217ECC000DAFE17 /* Parser */,
-				84F7F0D92215C9BA00DAFE17 /* View */,
+				84E223E72220DA51008F0404 /* TTTAttr */,
+				84E223E52220DA2B008F0404 /* YYText */,
 			);
 			path = Issue;
 			sourceTree = "<group>";
@@ -163,18 +240,9 @@
 		84F7F0D92215C9BA00DAFE17 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				84ED555E22165AC9009F16D9 /* ElementView */,
-				84F7F0DC2215CE3C00DAFE17 /* ElementCell */,
+				84E223F22222AA88008F0404 /* TTShorLeftBubbleCell.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		84F7F0DC2215CE3C00DAFE17 /* ElementCell */ = {
-			isa = PBXGroup;
-			children = (
-				84F7F0DA2215CE3900DAFE17 /* ShorLeftBubbleCell.swift */,
-			);
-			path = ElementCell;
 			sourceTree = "<group>";
 		};
 		84F7F0DD2215CFCC00DAFE17 /* assets */ = {
@@ -272,11 +340,13 @@
 				84F7F0C22215C82700DAFE17 /* Sources */,
 				84F7F0C32215C82700DAFE17 /* Frameworks */,
 				84F7F0C42215C82700DAFE17 /* Resources */,
-				57818011482E6544791D66E0 /* [CP] Embed Pods Frameworks */,
+				84E223E42220D98A008F0404 /* Embed Frameworks */,
+				F09F94925CA22837D9ED5FE0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				84E223E32220D98A008F0404 /* PBXTargetDependency */,
 			);
 			name = "Shorthair-Sample";
 			productName = "Shorthair-Sample";
@@ -377,25 +447,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		57818011482E6544791D66E0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9F570B631BE87C172BE2C553 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,6 +469,25 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F09F94925CA22837D9ED5FE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Shorthair-Sample/Pods-Shorthair-Sample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -425,8 +495,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84ED556022165AF9009F16D9 /* ShorBubbleTextView.swift in Sources */,
+				84E223F62222AAD4008F0404 /* TTShorLeftBubbleCellModel.swift in Sources */,
+				84E223EA2220DB2F008F0404 /* TTMarkdownParser.swift in Sources */,
 				84F7F0E62217EE1E00DAFE17 /* ShorMarkdownParser.swift in Sources */,
+				84E223EF2220EF9B008F0404 /* TTMarkdownLabel.swift in Sources */,
+				84E223F32222AA88008F0404 /* TTShorLeftBubbleCell.swift in Sources */,
 				84F7F0DB2215CE3900DAFE17 /* ShorLeftBubbleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,7 +516,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84F7F0CB2215C82700DAFE17 /* ViewController.swift in Sources */,
+				84E223DD22205AAD008F0404 /* TTAttrViewController.swift in Sources */,
+				84F7F0CB2215C82700DAFE17 /* YYTestViewController.swift in Sources */,
 				84F7F0C92215C82700DAFE17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -451,6 +525,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		84E223E32220D98A008F0404 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F7F0A72215C80500DAFE17 /* Shorthair */;
+			targetProxy = 84E223E22220D98A008F0404 /* PBXContainerItemProxy */;
+		};
 		84F7F0B42215C80500DAFE17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 84F7F0A72215C80500DAFE17 /* Shorthair */;
@@ -623,6 +702,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gua.desgard.Shorthair;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -652,6 +732,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = gua.desgard.Shorthair;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -699,6 +780,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6741F2A60BCFEE7E9643FE82 /* Pods-Shorthair-Sample.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;
@@ -719,6 +801,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DA97BE4857FCA12DB50F425D /* Pods-Shorthair-Sample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DNL5G5M9A8;

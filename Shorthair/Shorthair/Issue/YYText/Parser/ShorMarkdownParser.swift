@@ -82,13 +82,15 @@ extension ShorMarkdownParser: YYTextParser {
             let sharpResult: NSRange = result.range(at: 1)
             let descResult: NSRange = result.range(at: 2)
             let sharpLen = sharpResult.length
-            let desc: NSMutableAttributedString = NSMutableAttributedString(string: (str as NSString).substring(with: descResult))
-            desc.yy_setColor(.red, range: NSRange(location: 0, length: desc.length))
+            text.yy_setColor(.red, range: r)
             
-            let realR = NSRange(location: r.location - delta, length: r.length)
-            text.replaceCharacters(in: realR, with: desc)
-
-            let newDescR = NSRange(location: sharpResult.location - delta, length: descResult.length)
+//            let desc: NSMutableAttributedString = NSMutableAttributedString(string: (str as NSString).substring(with: descResult))
+//            desc.yy_setColor(.red, range: NSRange(location: 0, length: desc.length))
+//
+//            let realR = NSRange(location: r.location - delta, length: r.length)
+//            text.replaceCharacters(in: realR, with: desc)
+//
+//            let newDescR = NSRange(location: sharpResult.location - delta, length: descResult.length)
 //            text.yy_removeDiscontinuousAttributes(in: newDescR)
 //            text.yy_setColor(.red, range: newDescR)
 //            text.yy_setFont(UIFont.systemFont(ofSize: 17), range: newDescR)
